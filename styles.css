@@ -1,2 +1,20 @@
 
 /* Your CSS Code here. */
+.holder {
+  display: flex;
+  flex-wrap: wrap; /* Wrap items to next line */
+  justify-content: space-between; /* First & last item touch edges, space in between */
+  padding: 0; /* No padding so first and last item touch screen edges */
+  width: 100%; /* Full width of the screen */
+  box-sizing: border-box;
+}
+
+.item {
+  flex: 0 0 auto;  /* Prevent grow/shrink */
+  width: 120px;
+  height: 120px;
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
